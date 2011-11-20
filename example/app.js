@@ -13,15 +13,13 @@ var label = Ti.UI.createLabel({
   height: 30,
   left: 10,
   right: 10,
-  text: 'keychain test',
+  text: 'KeyChain Test',
 });
 window.add(label);
 
 window.open();
 
-// TODO: write your module tests here
 var tikeychainstore = require('com.kishikawakatsumi.tikeychainstore');
-Ti.API.info("module is => " + tikeychainstore);
 
 var store = tikeychainstore.createKeychainStore({
   service: 'com.kishikawakatsumi.ti'
